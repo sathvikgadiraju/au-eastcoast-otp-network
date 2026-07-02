@@ -54,7 +54,10 @@ All services are parameterised for **Wednesday 20 May 2026** — a neutral weekd
 .\build_graph.ps1 -MaxMemoryGb 16
 
 # 2. Start the server
-.\run_otp.ps1
+.\run_otp.ps1 
+
+.\"PowerShell Scripts\run_otp.ps1" #Start
+Get-Process java | Stop-Process #Stop
 
 # 3. Access the routing interface
 # Web UI:    http://localhost:8080/
